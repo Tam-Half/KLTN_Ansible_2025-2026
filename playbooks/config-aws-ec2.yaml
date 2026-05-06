@@ -3,4 +3,4 @@
   become: yes
   hosts: reverse_proxy
   roles:
-    - ../roles/reverse_proxy # chỉ định các roles được lên kịch bản
+    - reverse_proxy # chỉ định các roles được lên kịch bản
