@@ -7,7 +7,7 @@
 
 - name: Configure Nginx
   ansible.builtin.template:
-    src: /templates/nginx_reverse_proxy.conf.j2
+    src: nginx_reverse_proxy.conf.j2
     dest: /etc/nginx/sites-available/default
     owner: root
     group: root
