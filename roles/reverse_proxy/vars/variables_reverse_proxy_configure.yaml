@@ -1,0 +1,4 @@
+---
+port_list: "80"
+ip_proxy_pass: "172.0.0.1"
+port_proxy_pass: "8080"
