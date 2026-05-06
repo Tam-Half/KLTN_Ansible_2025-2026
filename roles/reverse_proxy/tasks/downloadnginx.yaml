@@ -19,3 +19,9 @@
     dest: /etc/nginx/sites-enabled/default
     state: link
   notify: Restart Configure Nginx
+
+- name: Enable and Start Nginx service
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes
