@@ -1,0 +1,5 @@
+
+- name: Install Nginx
+  become: yes
+  block:
+    - include_tasks: downloadnginx.yaml
