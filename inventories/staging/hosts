@@ -1,2 +1,2 @@
-[revers_proxy]
-192.168.43.120
+[reverse_proxy]
+192.168.43.120 ansible_user=tam
