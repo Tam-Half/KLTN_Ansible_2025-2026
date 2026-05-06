@@ -7,7 +7,7 @@
 - name: Configure Nginx
   ansible.builtin.copy:
     src: files/nginx_reverse_proxy.conf
-    dest: /etc/nginx/sites-avaiable/default
+    dest: /etc/nginx/sites-available/default
     owner: root
     group: root
     mode: "0644"
@@ -15,7 +15,7 @@
 
 - name: Configure Symlink
   ansible.builtin.file:
-    src: /etc/nginx/sites-avaiable/default
+    src: /etc/nginx/sites-available/default
     dest: /etc/nginx/sites-enabled/default
     state: link
   notify: Restart Configure Nginx
