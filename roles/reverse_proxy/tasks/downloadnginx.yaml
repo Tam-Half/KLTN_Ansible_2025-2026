@@ -4,16 +4,16 @@
     state: present
     update_cache: yes
 
-- name: Configure Nginx 
+- name: Configure Nginx
   ansible.builtin.copy:
     src: files/nginx_reverse_proxy.conf
     dest: /etc/nginx/sites-avaiable/default
     owner: root
     group: root
-    mode: '0644'
+    mode: "0644"
   notify: Restart Configure Nginx
-  
-- name: Configure Symlink 
+
+- name: Configure Symlink
   ansible.builtin.file:
     src: /etc/nginx/sites-avaiable/default
     dest: /etc/nginx/sites-enabled/default
