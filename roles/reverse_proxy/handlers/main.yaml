@@ -1,3 +1,4 @@
+#restart nginx 
 - name: Restart Configure Nginx
   ansible.builtin.service:
     name: nginx
